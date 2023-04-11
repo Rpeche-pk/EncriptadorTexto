@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./js/encriptador.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="txtEncriptado" />
+    <textarea id="txtDesencriptado" cols="30" rows="10"></textarea>
+    <button type="button" id="btnEncriptado">Encriptar</button>
+    <button type="button" id="btnDesencriptado">Desencriptar</button>
+    <button type="button" id="btnCopiar">Copiar</button>
+  </body>
+  <script>
+    let btn = document.querySelector("#btnEncriptado");
+    btn.onclick = encriptar;
+    let btn2 = document.querySelector("#btnDesencriptado");
+    btn2.onclick = desencriptar;
+    let btn3 = document.querySelector("#btnCopiar");
+    btn3.onclick = copy;
+  </script>
+</html>
