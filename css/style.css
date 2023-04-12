@@ -205,6 +205,17 @@
     color: #0a3871;
 
 }
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px;
+    gap: 40px;
+
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
 
 /* Responsive design */
 @media (max-width: 57.5em) {
