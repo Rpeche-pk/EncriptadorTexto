@@ -33,23 +33,29 @@
       </div>
     </div>
 
-    <div class="encriptado">
-      <img src="" alt="" id="muñeco" />
+    <div class="encriptado" id="idEncriptado">
+      <img src="./img/alura.png" alt="" id="muñeco" />
+      <!--<textarea
+        id="txtDesencriptado"
+        name="mensaje"
+        cols="30"
+        rows="10"
+        class="mensaje"
+      ></textarea> -->
       <div class="mensaje-encriptado" id="mensaje-encriptado">
         <h2 id="titulo-mensaje">Ningún mensaje fue econtrado</h2>
         <p id="parrafo">
           Ingresa el texto que desees encriptar o desencriptar.
         </p>
 
-        <button type="button" id="btnCopiar">Copiar</button>
-        <textarea
-          id="txtDesencriptado"
-          name="mensaje"
-          id="mensaje"
-          cols="30"
-          rows="10"
-          class="mensaje"
-        ></textarea>
+        <button
+          type="button"
+          class="btn_copy"
+          style="display: none"
+          id="btnCopiar"
+        >
+          Copiar
+        </button>
       </div>
     </div>
   </body>
