@@ -5,14 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="./js/encriptador.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="txtEncriptado" />
-    <textarea id="txtDesencriptado" cols="30" rows="10"></textarea>
-    <button type="button" id="btnEncriptado">Encriptar</button>
-    <button type="button" id="btnDesencriptado">Desencriptar</button>
-    <button type="button" id="btnCopiar">Copiar</button>
+    <div class="container">
+      <div class="encriptar">
+        <textarea
+          class="texto"
+          id="txtEncriptado"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí 😎"
+        ></textarea>
+      </div>
+      <div class="terminos">
+        <p>👀Solo letras minúsculas y sin acentos.</p>
+      </div>
+
+      <div class="botones">
+        <button type="button" class="btn-encriptar" id="btnEncriptado">
+          Encriptar
+        </button>
+        <button type="button" class="btn-desencriptar" id="btnDesencriptado">
+          Desencriptar
+        </button>
+      </div>
+    </div>
+
+    <div class="encriptado">
+      <img src="" alt="" id="muñeco" />
+      <div class="mensaje-encriptado" id="mensaje-encriptado">
+        <h2 id="titulo-mensaje">Ningún mensaje fue econtrado</h2>
+        <p id="parrafo">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+
+        <button type="button" id="btnCopiar">Copiar</button>
+        <textarea
+          id="txtDesencriptado"
+          name="mensaje"
+          id="mensaje"
+          cols="30"
+          rows="10"
+          class="mensaje"
+        ></textarea>
+      </div>
+    </div>
   </body>
   <script>
     let btn = document.querySelector("#btnEncriptado");
